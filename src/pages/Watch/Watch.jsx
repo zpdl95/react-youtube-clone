@@ -18,7 +18,7 @@ export default function Watch() {
           type='text/html'
           width='100%'
           height='664'
-          src={`http://www.youtube.com/embed/${video.id}`}
+          src={`https://www.youtube.com/embed/${video.id}`}
           frameBorder='0'
           title={title}
         />
@@ -26,7 +26,7 @@ export default function Watch() {
         <div>
           <h2 className='text-2xl font-bold py-3'>{title}</h2>
           <ChannelInfo id={channelId} title={channelTitle} />
-          <div className='line-clamp-4'>
+          <div>
             <p>
               {new Date(publishedAt).toLocaleDateString()}
               {new Date(publishedAt).toLocaleTimeString()}
