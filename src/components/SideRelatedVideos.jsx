@@ -9,7 +9,6 @@ export default function SideRelatedVideos({ id }) {
     isLoading,
     isError,
     data: videos,
-    error,
   } = useQuery({
     queryKey: ['related', id],
     queryFn: ({ queryKey }) => {

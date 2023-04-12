@@ -1,8 +1,8 @@
-import { useQuery } from '@tanstack/react-query';
 import React from 'react';
+import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router-dom';
-import { VideoCard } from '../../components';
-import { useYoutubeApi } from '../../context/YoutubeApiContext';
+import { VideoCard } from '../components';
+import { useYoutubeApi } from '../context/YoutubeApiContext';
 
 export default function Videos() {
   const { query } = useParams();
@@ -13,11 +13,7 @@ export default function Videos() {
     data: videos,
   } = useQuery({
     queryKey: ['videos', query],
-    queryFn: ({ queryKey }) => {
-      const [_, query] = queryKey;
-
-      return youtube.search(query);
-    },
+    queryFn: () => youtube.search(query),
     staleTime: 1000 * 60 * 1,
   });
 

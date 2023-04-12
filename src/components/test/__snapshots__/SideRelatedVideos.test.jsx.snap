@@ -1,0 +1,62 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SideRelatedVideos > SideRelatedVideos snapshot 1`] = `
+<DocumentFragment>
+  <ul
+    class="flex flex-col gap-2 mb-4"
+  >
+    <li
+      class="flex gap-2 "
+    >
+      <img
+        alt="title"
+        class="cursor-pointer w-40 rounded-md"
+        src="http://image/"
+      />
+      <div>
+        <p
+          class="font-semibold my-2 line-clamp-2 text-sm font-normal"
+        >
+          title
+        </p>
+        <p
+          class="text-sm opacity-70 text-xs"
+        >
+          channelTitle
+        </p>
+        <p
+          class="text-sm opacity-70 text-xs"
+        >
+          just now
+        </p>
+      </div>
+    </li>
+    <li
+      class="flex gap-2 "
+    >
+      <img
+        alt="title2"
+        class="cursor-pointer w-40 rounded-md"
+        src="http://image2/"
+      />
+      <div>
+        <p
+          class="font-semibold my-2 line-clamp-2 text-sm font-normal"
+        >
+          title2
+        </p>
+        <p
+          class="text-sm opacity-70 text-xs"
+        >
+          channelTitle2
+        </p>
+        <p
+          class="text-sm opacity-70 text-xs"
+        >
+          just now
+        </p>
+      </div>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

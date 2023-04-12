@@ -1,5 +1,5 @@
-import Videos from './Videos/Videos';
-import Watch from './Watch/Watch';
+import Videos from './Videos';
+import Watch from './Watch';
 import Root from './Root';
 import NotFound from './NotFound';
 

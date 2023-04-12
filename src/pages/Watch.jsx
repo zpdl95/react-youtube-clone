@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { ChannelInfo, SideRelatedVideos } from '../../components';
+import { ChannelInfo, SideRelatedVideos } from '../components';
 
 export default function Watch() {
   const {
@@ -8,7 +8,9 @@ export default function Watch() {
   } = useLocation();
 
   const { publishedAt, title, channelTitle, channelId, description } =
-    video?.snippet;
+    video.snippet;
+
+  console.log(description);
 
   return (
     <section className='flex flex-col lg:flex-row gap-5 px-4'>
@@ -19,7 +21,6 @@ export default function Watch() {
           width='100%'
           height='664'
           src={`https://www.youtube.com/embed/${video.id}`}
-          frameBorder='0'
           title={title}
         />
 

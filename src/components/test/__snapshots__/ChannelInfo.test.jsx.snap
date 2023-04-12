@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ChannelInfo > ChannelInfo snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center py-2 gap-3"
+  >
+    <img
+      alt="title"
+      class="w-10 h-10 rounded-full"
+      src="url"
+    />
+    <p
+      class="text-lg font-medium"
+    >
+      title
+    </p>
+  </div>
+</DocumentFragment>
+`;

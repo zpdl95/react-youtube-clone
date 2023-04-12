@@ -4,11 +4,7 @@ import { useYoutubeApi } from '../context/YoutubeApiContext';
 
 export default function ChannelInfo({ id, title }) {
   const { youtube } = useYoutubeApi();
-  const {
-    isLoading,
-    isError,
-    data: url,
-  } = useQuery({
+  const { data: url } = useQuery({
     queryKey: ['channel', id],
     queryFn: ({ queryKey }) => {
       const [_, id] = queryKey;
