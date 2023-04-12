@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { ChannelInfo, SideRelatedVideos } from '../components';
 
@@ -9,6 +9,14 @@ export default function Watch() {
 
   const { publishedAt, title, channelTitle, channelId, description } =
     video.snippet;
+
+  useEffect(() => {
+    document.title = title;
+
+    return () => {
+      document.title = 'YouTube';
+    };
+  }, [title]);
 
   console.log(description);
 
