@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { ChannelInfo, SideRelatedVideos } from '../components';
+import { ChannelInfo, SideChannelVideos } from '../components';
 
 export default function Watch() {
   const {
@@ -17,8 +17,6 @@ export default function Watch() {
       document.title = 'YouTube';
     };
   }, [title]);
-
-  console.log(description);
 
   return (
     <section className='flex flex-col lg:flex-row gap-5 px-4'>
@@ -46,7 +44,7 @@ export default function Watch() {
       </article>
 
       <aside className='basis-3/12'>
-        <SideRelatedVideos id={video.id} />
+        <SideChannelVideos id={channelId} />
       </aside>
     </section>
   );

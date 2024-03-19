@@ -18,13 +18,13 @@ export default class Youtube {
     return response.data.items[0].snippet.thumbnails.default.url;
   }
 
-  async relatedVideos(id) {
+  async channelVideos(id) {
     const response = await this.apiClient.search({
       params: {
         part: 'snippet',
         maxResults: 25,
         type: 'video',
-        relatedToVideoId: id,
+        channelId: id,
       },
     });
 

@@ -2,6 +2,6 @@ import VideoCard from './VideoCard';
 import ChannelInfo from './ChannelInfo';
 import Header from './Header';
 import Searchbar from './Searchbar';
-import SideRelatedVideos from './SideRelatedVideos';
+import SideChannelVideos from './SideChannelVideos';
 
-export { VideoCard, ChannelInfo, Header, Searchbar, SideRelatedVideos };
+export { VideoCard, ChannelInfo, Header, Searchbar, SideChannelVideos };
